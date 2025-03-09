@@ -37,7 +37,7 @@ export default function Habits() {
             </div>
             {newHabitPrompt ? <CreateHabit newState={formState} onComplete={(props) => formOnComplete(props)}/> : ""}
             <HabitContainer>
-                {habits.length === 0 ? <p>Você não tem nenhum hábito cadastrado ainda. Adicione um hábito para começar a trackear!</p> : ""}
+                {habits.length === 0 ? <p>Nenhum hábito cadastrado ainda. Adicione um hábito para começar a trackear!</p> : ""}
                 {habits.map( (curr) => {return (<Habit key={curr.id} id={curr.id} name={curr.name} days={curr.days}/>)} )}
             </HabitContainer>
 
